@@ -1,3 +1,7 @@
+.img-fit {
+  width: 100%;
+  height: auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,8 +181,11 @@ p {
 }
 .navigation nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 20%;
+  min-width: 300px;
   font-size: 1.6rem;
   color: #23293B;
 }
@@ -191,6 +198,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home header .header-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -233,6 +245,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-align: center;
+  background: #22283A;
+  color: white;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

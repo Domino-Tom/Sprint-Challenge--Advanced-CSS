@@ -1,1 +1,30 @@
 // Mixins Here
+
+.flex(@direction: row; @justify: center; @align: center;) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.img-fit {
+    width: 100%;
+    height: auto;
+}
+
+.btn-style(@bg-color: white; @text-color: black;) {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-size: 2rem;
+    text-align: center;
+
+    background: @bg-color;
+    color: @text-color;
+
+    &:hover {
+        background: @text-color;
+        color: @bg-color;
+    }
+}
